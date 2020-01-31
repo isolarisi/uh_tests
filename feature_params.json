@@ -6,7 +6,7 @@
 	"FeatureFolder": "D:\\mrsk_ug\\features",
 	"LaunchDBFolder": "D:\\mrsk_ug\\build",
 	"VanessaFolder": "D:\\vanessa-automation",
-	"AllureFolder": "D:\\allure",
+	"AllureFolder": "D:\\mrsk_ug\\temp\\allure",
 	"jUnitFolder": "",
 	"ScenarioLogFile": "D:\\mrsk_ug\\temp\\log.txt",
 	"ScenarioOutFile": "D:\\mrsk_ug\\temp\\result.txt",
