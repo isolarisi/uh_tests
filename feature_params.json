@@ -4,7 +4,7 @@
 	"ModelDBSettings": "D:\\mrsk_ug\\etalon_info\\bases.yaml",
 	"ModelDBid": "mrsk_ug",
 	"FeatureFolder": "D:\\mrsk_ug\\features",
-	"LaunchDBFolder": "D:\\mrsk_ug\\build",
+	"LaunchDBFolder": "C:\\mrsk_ug\\build",
 	"VanessaFolder": "D:\\vanessa-automation",
 	"AllureFolder": "D:\\mrsk_ug\\temp\\allure",
 	"jUnitFolder": "",
