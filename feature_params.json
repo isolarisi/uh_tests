@@ -1,5 +1,6 @@
 {
 	"ScenarioFolder": "D:\\mrsk_ug\\uh_tests",
+	"ProcessFolder": "D:\\mrsk_ug\\uh_tests\\proc",
 	"ExternalMode": "True",
 	"ModelDBSettings": "D:\\mrsk_ug\\etalon_info\\bases.yaml",
 	"ModelDBid": "mrsk_ug",
