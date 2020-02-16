@@ -1,0 +1,514 @@
+﻿<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидБюджета</dataPath>
+			<field>ВидБюджета</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид бюджета</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатьяБюджета</dataPath>
+			<field>СтатьяБюджета</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья бюджета</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦФО</dataPath>
+			<field>ЦФО</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АФМ_Состояние</dataPath>
+			<field>АФМ_Состояние</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контрагент</dataPath>
+			<field>Контрагент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоговорКонтрагента</dataPath>
+			<field>ДоговорКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АФМ_Сценарий</dataPath>
+			<field>АФМ_Сценарий</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АФМ_ТипКорректировки</dataPath>
+			<field>АФМ_ТипКорректировки</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриходРасход</dataPath>
+			<field>ПриходРасход</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МВЗ</dataPath>
+			<field>МВЗ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>МВЗ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИнструментПлатежа</dataPath>
+			<field>ИнструментПлатежа</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструмент платежа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидДеятельности</dataPath>
+			<field>ВидДеятельности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид деятельности</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектУправленческогоУчета</dataPath>
+			<field>ОбъектУправленческогоУчета</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект управленческого учета</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТерриториальнаяПринадлежность</dataPath>
+			<field>ТерриториальнаяПринадлежность</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Территориальная принадлежность</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЗатрат</dataPath>
+			<field>ВидЗатрат</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид затрат</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АФМ_СуммаСНДС</dataPath>
+			<field>АФМ_СуммаСНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма с НДС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Периоды.Ссылка КАК Период,
+	Периоды.ДатаНачала КАК ДатаНачала,
+	Периоды.ДатаОкончания КАК ДатаОкончания,
+	Периоды.Периодичность КАК Периодичность
+ПОМЕСТИТЬ ВТ_Периоды
+ИЗ
+	Справочник.Периоды КАК Периоды
+ГДЕ
+	Периоды.ДатаОкончания МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И Периоды.Периодичность В (ЗНАЧЕНИЕ(Перечисление.Периодичность.Месяц), ЗНАЧЕНИЕ(Перечисление.Периодичность.День))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОперативныйПланПоБюджетамОбороты.ВидБюджета КАК ВидБюджета,
+	ОперативныйПланПоБюджетамОбороты.ПериодОтчета КАК Период,
+	ОперативныйПланПоБюджетамОбороты.ЦФО КАК ЦФО,
+	ВЫРАЗИТЬ(ОперативныйПланПоБюджетамОбороты.Проект КАК Справочник.АФМ_КлючиБюджетнойАналитики) КАК КБА,
+	ОперативныйПланПоБюджетамОбороты.Организация КАК Организация,
+	ОперативныйПланПоБюджетамОбороты.СтатьяБюджета КАК СтатьяБюджета,
+	ОперативныйПланПоБюджетамОбороты.Валюта КАК Валюта,
+	ОперативныйПланПоБюджетамОбороты.АФМ_Сценарий КАК АФМ_Сценарий,
+	ОперативныйПланПоБюджетамОбороты.АФМ_Состояние КАК Состояние,
+	ОперативныйПланПоБюджетамОбороты.АФМ_ТипКорректировки КАК АФМ_ТипКорректировки,
+	ОперативныйПланПоБюджетамОбороты.СуммаОборот КАК АФМ_СуммаСНДС,
+	ОперативныйПланПоБюджетамОбороты.АФМ_КоличествоОборот КАК Количество
+ПОМЕСТИТЬ ВТ_ПланПоБюджетам
+ИЗ
+	РегистрНакопления.ОперативныйПланПоБюджетам.Обороты(
+			{(&amp;НП), (&amp;КП)},
+			,
+			,
+			ПериодОтчета В
+				(ВЫБРАТЬ
+					ВТ_Периоды.Период КАК Период
+				ИЗ
+					ВТ_Периоды КАК ВТ_Периоды)) КАК ОперативныйПланПоБюджетамОбороты
+{ГДЕ
+	ОперативныйПланПоБюджетамОбороты.ВидБюджета.*,
+	ОперативныйПланПоБюджетамОбороты.ЦФО.*,
+	ОперативныйПланПоБюджетамОбороты.Организация.*,
+	ОперативныйПланПоБюджетамОбороты.СтатьяБюджета.*,
+	ОперативныйПланПоБюджетамОбороты.Валюта.*,
+	ОперативныйПланПоБюджетамОбороты.АФМ_Сценарий.* КАК АФМ_Сценарий,
+	ОперативныйПланПоБюджетамОбороты.АФМ_Состояние КАК АФМ_Состояние,
+	ОперативныйПланПоБюджетамОбороты.АФМ_ТипКорректировки.* КАК АФМ_ТипКорректировки,
+	ОперативныйПланПоБюджетамОбороты.ПриходРасход.*}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ПланПоБюджетам.ВидБюджета КАК ВидБюджета,
+	ВТ_ПланПоБюджетам.Период КАК Период,
+	ВТ_ПланПоБюджетам.ЦФО КАК ЦФО,
+	ВТ_ПланПоБюджетам.Организация КАК Организация,
+	ВТ_ПланПоБюджетам.СтатьяБюджета КАК СтатьяБюджета,
+	ВТ_ПланПоБюджетам.Валюта КАК Валюта,
+	ВТ_ПланПоБюджетам.АФМ_Сценарий КАК АФМ_Сценарий,
+	ВТ_ПланПоБюджетам.Состояние КАК Состояние,
+	ВТ_ПланПоБюджетам.АФМ_ТипКорректировки КАК АФМ_ТипКорректировки,
+	СУММА(ВТ_ПланПоБюджетам.АФМ_СуммаСНДС) КАК АФМ_СуммаСНДС,
+	СУММА(ВТ_ПланПоБюджетам.Количество) КАК Количество,
+	АФМ_КлючиБюджетнойАналитики.Проект КАК Проект,
+	АФМ_КлючиБюджетнойАналитики.ВидДеятельности КАК ВидДеятельности,
+	АФМ_КлючиБюджетнойАналитики.ОбъектУправленческогоУчета КАК ОбъектУправленческогоУчета,
+	АФМ_КлючиБюджетнойАналитики.ТерриториальнаяПринадлежность КАК ТерриториальнаяПринадлежность,
+	АФМ_КлючиБюджетнойАналитики.Склад КАК Склад,
+	АФМ_КлючиБюджетнойАналитики.ИнструментПлатежа КАК ИнструментПлатежа,
+	АФМ_КлючиБюджетнойАналитики.Договор.Владелец КАК Контрагент,
+	АФМ_КлючиБюджетнойАналитики.Договор КАК ДоговорКонтрагента,
+	АФМ_КлючиБюджетнойАналитики.ВидЗатрат КАК ВидЗатрат
+{ВЫБРАТЬ
+	ВидБюджета.*,
+	Период.*,
+	ЦФО.*,
+	Организация.*,
+	СтатьяБюджета.*,
+	Валюта.*,
+	АФМ_Сценарий.*,
+	АФМ_ТипКорректировки.*,
+	АФМ_СуммаСНДС,
+	Количество,
+	Проект.*,
+	ВидДеятельности.*,
+	ОбъектУправленческогоУчета.*,
+	ТерриториальнаяПринадлежность.*,
+	Склад.*,
+	ИнструментПлатежа.*,
+	Контрагент.*,
+	ДоговорКонтрагента.*,
+	ВидЗатрат.*}
+ИЗ
+	ВТ_ПланПоБюджетам КАК ВТ_ПланПоБюджетам
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.АФМ_КлючиБюджетнойАналитики КАК АФМ_КлючиБюджетнойАналитики
+		ПО ВТ_ПланПоБюджетам.КБА = АФМ_КлючиБюджетнойАналитики.Ссылка
+{ГДЕ
+	ВТ_ПланПоБюджетам.Период.*,
+	ВТ_ПланПоБюджетам.АФМ_СуммаСНДС,
+	ВТ_ПланПоБюджетам.Количество,
+	АФМ_КлючиБюджетнойАналитики.Проект.* КАК Проект,
+	АФМ_КлючиБюджетнойАналитики.ВидДеятельности.* КАК ВидДеятельности,
+	АФМ_КлючиБюджетнойАналитики.ОбъектУправленческогоУчета.* КАК ОбъектУправленческогоУчета,
+	АФМ_КлючиБюджетнойАналитики.ТерриториальнаяПринадлежность.* КАК ТерриториальнаяПринадлежность,
+	АФМ_КлючиБюджетнойАналитики.МВЗ.* КАК МВЗ,
+	АФМ_КлючиБюджетнойАналитики.Склад.* КАК Склад,
+	АФМ_КлючиБюджетнойАналитики.ИнструментПлатежа.* КАК ИнструментПлатежа,
+	АФМ_КлючиБюджетнойАналитики.Договор.Владелец.* КАК Контрагент,
+	АФМ_КлючиБюджетнойАналитики.Договор.* КАК ДоговорКонтрагента,
+	АФМ_КлючиБюджетнойАналитики.ВидЗатрат.* КАК ВидЗатрат}
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ПланПоБюджетам.АФМ_ТипКорректировки,
+	ВТ_ПланПоБюджетам.Валюта,
+	АФМ_КлючиБюджетнойАналитики.Проект,
+	ВТ_ПланПоБюджетам.ВидБюджета,
+	ВТ_ПланПоБюджетам.СтатьяБюджета,
+	АФМ_КлючиБюджетнойАналитики.ВидДеятельности,
+	ВТ_ПланПоБюджетам.Период,
+	ВТ_ПланПоБюджетам.ЦФО,
+	ВТ_ПланПоБюджетам.Организация,
+	ВТ_ПланПоБюджетам.АФМ_Сценарий,
+	ВТ_ПланПоБюджетам.Состояние,
+	АФМ_КлючиБюджетнойАналитики.Склад,
+	АФМ_КлючиБюджетнойАналитики.ТерриториальнаяПринадлежность,
+	АФМ_КлючиБюджетнойАналитики.ИнструментПлатежа,
+	АФМ_КлючиБюджетнойАналитики.ОбъектУправленческогоУчета,
+	АФМ_КлючиБюджетнойАналитики.Договор,
+	АФМ_КлючиБюджетнойАналитики.ВидЗатрат,
+	АФМ_КлючиБюджетнойАналитики.Договор.Владелец</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<totalField>
+		<dataPath>АФМ_СуммаСНДС</dataPath>
+		<expression>Сумма(АФМ_СуммаСНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>КП</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>КП</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НП</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>НП</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидБюджета</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦФО</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проект</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтатьяБюджета</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Валюта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Контрагент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДоговорКонтрагента</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>АФМ_Сценарий</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>АФМ_ТипКорректировки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидДеятельности</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИнструментПлатежа</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъектУправленческогоУчета</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТерриториальнаяПринадлежность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>АФМ_СуммаСНДС</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">АФМ_Сценарий</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config" xsi:type="d6p1:CatalogRef.Сценарии">00000000-0000-0000-0000-000000000000</dcsset:right>
+					<dcsset:userSettingID>459ca32f-93d6-4fad-b537-f37bc3c5040e</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config" xsi:type="d6p1:CatalogRef.Организации">00000000-0000-0000-0000-000000000000</dcsset:right>
+					<dcsset:userSettingID>7df5cf14-e77b-47ed-8122-a70e48f453b2</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ЦФО</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config" xsi:type="d6p1:CatalogRef.Организации">00000000-0000-0000-0000-000000000000</dcsset:right>
+					<dcsset:userSettingID>43571541-2453-4f73-ab0f-7dc6407147d3</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СтатьяБюджета</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>9fa8ce87-72b0-4e61-afed-86ea96f9d307</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>f3a0fd8c-b2cb-423b-9e16-c91400f21df5</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>87cca3c9-9e50-4e4b-ae9f-1bb77c540457</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</dataCompositionSchema>
